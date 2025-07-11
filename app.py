@@ -1,7 +1,7 @@
 import pandas as pd
 import duckdb
 import streamlit as st
-from scripts.db_loader import load_combined_data
+from scripts.db_loader import load_data as load_combined_data
 
 # Titre général
 st.set_page_config(page_title="Comparaison BK vs MCD", layout="wide")
