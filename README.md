@@ -1,10 +1,36 @@
-# 📊 Comparateur de Ventes – McDonald's vs Burger King
+# Comparaison des donnees McDonald's vs Burger King
 
-Projet de création d'une application interactive avec **Streamlit** et **DuckDB**, permettant d'importer un fichier CSV, analyser les ventes, filtrer dynamiquement, et visualiser 4 indicateurs clés de performance (KPI).
+## Description du projet
+
+Cette application web interactive permet de comparer les informations nutritionnelles de produits issus de McDonald's et Burger King.
+
+Elle a pour objectifs :
+- Le chargement et la visualisation des donnees issues de fichiers CSV.
+- La manipulation des donnees avec DuckDB.
+- La construction d'interfaces interactives avec Streamlit.
+- L'affichage de 4 indicateurs cles (KPI) a travers des visualisations interactives.
+- L'utilisation de filtres dynamiques pour affiner les resultats par date ou produit.
+
+Ce projet vise a evaluer nos competences en manipulation de donnees, SQL, visualisation et collaboration avec Git.
 
 ---
 
-##👥 Répartition des rôles
+## Fonctionnalites principales
+
+- Chargement automatique des donnees McDonald's et Burger King (fichiers CSV).
+- Visualisation des structures de donnees.
+- Analyse exploratoire des valeurs (calories, categories, etc.).
+- Repartition des produits par restaurant, par date, par type.
+- Filtres dynamiques sur les donnees.
+- Affichage de quatre visualisations interconnectees representant les indicateurs cles.
+
+---
+
+## Architecture du projet
+<img width="880" height="438" alt="image" src="https://github.com/user-attachments/assets/231e02de-0d7f-477f-bf20-b9be9a427cfb" />
+
+
+## 👥 Répartition des rôles
 
 - Bader Drissi	 : 📊 Data Analyst & Visualisation	Chargée des explorations graphiques, choix des indicateurs clés (KPI), et dashboard Streamlit
 - Wael Ben Yahmed	 : 🧠 Responsable base de données & intégration DuckDB	Mise en place des requêtes SQL, chargement des données et structure des tables
@@ -12,6 +38,8 @@ Projet de création d'une application interactive avec **Streamlit** et **DuckDB
 
 
 ## 🧰 Technologies
+
+
 ## 🚀 Objectifs
 
 - Importer et interroger dynamiquement des données CSV via **DuckDB**
@@ -41,7 +69,7 @@ project_evaluation/
 └── README.md
 
 
-##🧪 Fonctionnalités principales
+## 🧪 Fonctionnalités principales
 ✅ Importation de fichiers CSV
 ✅ Requêtes SQL avec DuckDB
 ✅ Filtres dynamiques : date, produit, région
@@ -59,7 +87,7 @@ project_evaluation/
 
 Barres, camembert, ligne, boxplot
 
-##🧱 Difficultés rencontrées & Solutions
+## 🧱 Difficultés rencontrées & Solutions
 Problème rencontré	Solution apportée
 Erreurs d'import duckdb malgré installation	Activation correcte de l'environnement virtuel avant lancement (venv\Scripts\activate)
 Structure des fichiers non détectée par Streamlit	Respect strict de l'arborescence scripts/, et import relatifs
