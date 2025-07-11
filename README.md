@@ -36,73 +36,34 @@ Ce projet vise a evaluer nos competences en manipulation de donnees, SQL, visual
 - Wael Ben Yahmed	 : 🧠 Responsable base de données & intégration DuckDB	Mise en place des requêtes SQL, chargement des données et structure des tables
 - Khalil Kadri  : 🛠️ Développeur Streamlit & Gestion du projet Git	Architecture de l'application, gestion du dépôt Git, fusions de branches et app UI
 
+## Repartition des roles
 
-## 🧰 Technologies
-
-
-## 🚀 Objectifs
-
-- Importer et interroger dynamiquement des données CSV via **DuckDB**
-- Visualiser les **KPI essentiels** d’un fichier de ventes
-- Filtrer les résultats par **date**, **région**, et **produit**
-- Fournir une **interface web intuitive** avec **Streamlit**
+- **Bader Drissi** : Analyse de donnees, visualisations graphiques, indicateurs KPI et layout Streamlit.
+- **Wael Ben Yahmed** : Integration des donnees dans DuckDB, requetes SQL et preparation des tables.
+- **Khalil Kadri** : Developpement de l'application Streamlit, architecture du projet, integration des composants et gestion Git.
 
 ---
 
+## Difficultes rencontrees et solutions apportees
 
-- [Python](https://www.python.org/)
-- [Streamlit](https://streamlit.io/)
-- [DuckDB](https://duckdb.org/)
-- [Plotly](https://plotly.com/python/)
+| Probleme                              | Solution apportee                                               |
+|---------------------------------------|------------------------------------------------------------------|
+| Incompatibilite des schemas entre CSV | Utilisation de `read_csv_auto` de DuckDB et harmonisation manuelle |
+| Erreurs de type sur les dates         | Conversion explicite des colonnes avec `CAST` ou `pd.to_datetime()` |
+| Mauvais encodage dans le terminal     | Sauvegarde des fichiers en UTF-8 et nettoyage des caracteres    |
+| Visualisations peu lisibles           | Passage a Plotly pour une meilleure lisibilite et interactivite |
 
 ---
 
-## 🏗️ Architecture du projet
+## Technologies utilisees
 
-project_evaluation/
-├── data/
-│ └── [fichiers .csv importés]
-├── scripts/
-│ └── db_loader.py
-├── app.py
-├── requirements.txt
-└── README.md
+- Python 3.10+
+- Streamlit
+- DuckDB
+- Pandas
+- Plotly
 
 
-## 🧪 Fonctionnalités principales
-✅ Importation de fichiers CSV
-✅ Requêtes SQL avec DuckDB
-✅ Filtres dynamiques : date, produit, région
-✅ 4 indicateurs clés :
-
-💰 Total des ventes
-
-🧾 Nombre de transactions
-
-🏆 Produit le plus vendu
-
-🌍 Région la plus rentable
-
-✅ 4 graphiques :
-
-Barres, camembert, ligne, boxplot
-
-## 🧱 Difficultés rencontrées & Solutions
-Problème rencontré	Solution apportée
-Erreurs d'import duckdb malgré installation	Activation correcte de l'environnement virtuel avant lancement (venv\Scripts\activate)
-Structure des fichiers non détectée par Streamlit	Respect strict de l'arborescence scripts/, et import relatifs
-Erreurs lors de la jointure des tables CSV (UNION ALL)	Harmonisation des noms de colonnes avec alias (AS) pour chaque table
-Mauvais affichage des graphiques	Passage de matplotlib à Plotly pour une meilleure interaction
-Problème de chemin relatif dans os.path.join()	Vérification que les fichiers .csv sont bien dans un dossier data/
-
-
-
-
-
-📌 Remarques
-Ce projet peut être facilement adapté à tout jeu de données de ventes.
-
-L’utilisation de DuckDB permet une performance optimale sur fichiers CSV volumineux.
 
 
 
