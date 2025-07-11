@@ -4,6 +4,14 @@ Projet de création d'une application interactive avec **Streamlit** et **DuckDB
 
 ---
 
+👥 Répartition des rôles
+Membre de l'équipe	Rôle principal	Détails des contributions
+Bader Drissi	📊 Data Analyst & Visualisation	Chargée des explorations graphiques, choix des indicateurs clés (KPI), et dashboard Streamlit
+Wael Ben Yahmed	🧠 Responsable base de données & intégration DuckDB	Mise en place des requêtes SQL, chargement des données et structure des tables
+Khalil Kadri 🛠️ Développeur Streamlit & Gestion du projet Git	Architecture de l'application, gestion du dépôt Git, fusions de branches et app UI
+
+
+## 🧰 Technologies
 ## 🚀 Objectifs
 
 - Importer et interroger dynamiquement des données CSV via **DuckDB**
@@ -13,7 +21,6 @@ Projet de création d'une application interactive avec **Streamlit** et **DuckDB
 
 ---
 
-## 🧰 Technologies
 
 - [Python](https://www.python.org/)
 - [Streamlit](https://streamlit.io/)
@@ -34,7 +41,7 @@ project_evaluation/
 └── README.md
 
 
-🧪 Fonctionnalités principales
+##🧪 Fonctionnalités principales
 ✅ Importation de fichiers CSV
 ✅ Requêtes SQL avec DuckDB
 ✅ Filtres dynamiques : date, produit, région
@@ -52,18 +59,17 @@ project_evaluation/
 
 Barres, camembert, ligne, boxplot
 
-👥 Équipe
-Membre	Rôle
-Khalil Kadri	Chef de projet / Dev
-[Nom 2]	Dev / Visualisation
-[Nom 3]	SQL / Back-end
-[Nom 4]	Documentation / Tests
+##🧱 Difficultés rencontrées & Solutions
+Problème rencontré	Solution apportée
+Erreurs d'import duckdb malgré installation	Activation correcte de l'environnement virtuel avant lancement (venv\Scripts\activate)
+Structure des fichiers non détectée par Streamlit	Respect strict de l'arborescence scripts/, et import relatifs
+Erreurs lors de la jointure des tables CSV (UNION ALL)	Harmonisation des noms de colonnes avec alias (AS) pour chaque table
+Mauvais affichage des graphiques	Passage de matplotlib à Plotly pour une meilleure interaction
+Problème de chemin relatif dans os.path.join()	Vérification que les fichiers .csv sont bien dans un dossier data/
 
-⚠️ N'oublie pas de mettre vos vrais noms ou GitHub handles.
 
-📬 Soumission
-Projet à remettre par mail :
-MBAESG_EVALUATION_MANAGEMENT_OPERATIONNEL → axel@logbrain.fr
+
+
 
 📌 Remarques
 Ce projet peut être facilement adapté à tout jeu de données de ventes.
