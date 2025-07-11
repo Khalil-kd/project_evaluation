@@ -1,5 +1,8 @@
 # Comparaison des donnees McDonald's vs Burger King
 
+
+[![Accéder à l'application](https://img.shields.io/badge/🚀%20Lancer%20l'application%20Streamlit-brightgreen?style=for-the-badge)](https://ton-lien-streamlit.streamlit.app)
+
 ## Description du projet
 
 Cette application web interactive permet de comparer les informations nutritionnelles de produits issus de McDonald's et Burger King.
