@@ -4,11 +4,11 @@ Projet de création d'une application interactive avec **Streamlit** et **DuckDB
 
 ---
 
-👥 Répartition des rôles
-Membre de l'équipe	Rôle principal	Détails des contributions
-Bader Drissi	📊 Data Analyst & Visualisation	Chargée des explorations graphiques, choix des indicateurs clés (KPI), et dashboard Streamlit
-Wael Ben Yahmed	🧠 Responsable base de données & intégration DuckDB	Mise en place des requêtes SQL, chargement des données et structure des tables
-Khalil Kadri 🛠️ Développeur Streamlit & Gestion du projet Git	Architecture de l'application, gestion du dépôt Git, fusions de branches et app UI
+##👥 Répartition des rôles
+
+- Bader Drissi	 : 📊 Data Analyst & Visualisation	Chargée des explorations graphiques, choix des indicateurs clés (KPI), et dashboard Streamlit
+- Wael Ben Yahmed	 : 🧠 Responsable base de données & intégration DuckDB	Mise en place des requêtes SQL, chargement des données et structure des tables
+- Khalil Kadri  : 🛠️ Développeur Streamlit & Gestion du projet Git	Architecture de l'application, gestion du dépôt Git, fusions de branches et app UI
 
 
 ## 🧰 Technologies
