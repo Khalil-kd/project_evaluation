@@ -34,24 +34,6 @@ project_evaluation/
 └── README.md
 
 
----
-
-## ⚙️ Installation
-
-1. **Cloner le dépôt**
-
-```bash
-git clone https://github.com/Khalil-kd/project_evaluation.git
-cd project_evaluation
-
-python -m venv venv
-venv\Scripts\activate       # Windows
-# source venv/bin/activate  # Linux/macOS
-
-pip install -r requirements.txt
-
-streamlit run app.py
-
 🧪 Fonctionnalités principales
 ✅ Importation de fichiers CSV
 ✅ Requêtes SQL avec DuckDB
